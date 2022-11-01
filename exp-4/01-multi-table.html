@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>multiplication table</title>
+</head>
+<body>
+    <script>
+        const rows = prompt("Enter number of rows");
+        const cols = prompt("Enter number of cols");
+        let data = `<table border="1" cellspacing="0" cellpadding="5">`;
+        for(var i=1; i<=rows; i++){
+            data += "<tr>";
+            for(var j=1; j<=cols; j++){
+                data += `<td>${i*j}</td>`;
+            }
+            data += "</tr>";
+        }
+        data += "</table>";
+        document.write(data)
+    </script>
+</body>
+</html>

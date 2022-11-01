@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>FORM VALIDATION</h1>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="enter your username" />
+      <span id="username-msg" class="danger"> </span>
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="enter your email" />
+      <span id="email-msg" class="danger"> </span>
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="enter your password" />
+      <span id="password-msg" class="danger"> </span>
+      <br />
+      <br />
+      <label for="confirm-pwd">Confirm Password:</label>
+      <input type="password" id="confirm-pwd" placeholder="confirm password" />
+      <span id="confirm-pwd-msg" class="danger"></span>
+      <br />
+      <br />
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" placeholder="enter phone" />
+      <span id="phone-msg" class="danger"></span>
+      <br />
+      <br />
+      <label for="country">Select Country:</label>
+      <select name="country" id="country">
+        <option value="-1"></option>
+        <option value="ind">India</option>
+        <option value="usa">USA</option>
+        <option value="jpn">Japan</option>
+      </select>
+      <span id="country-msg" class="danger"></span>
+      <br />
+      <br />
+      <label for="gender">Select Gender:</label>
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="other" />Other
+      <span id="gender-msg" class="danger"></span>
+      <br />
+      <br />
+      <label for="course">Course Registered:</label>
+      <input type="checkbox" name="it" />IT
+      <input type="checkbox" name="cs" />CS
+      <input type="checkbox" name="mech" />Mechanical
+      <span id="course-msg" class="danger"></span>
+      <br />
+      <br />
+      <input type="button" id="btn-validate" value="Validate" />
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

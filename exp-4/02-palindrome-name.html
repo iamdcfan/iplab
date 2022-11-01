@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>palindrome name</title>
+</head>
+<body>
+    <script>
+        const isPallindrome = (data)=>{
+            let end = data.length - 1;
+            for(let start=0; start <= data.length/2; start++){
+                if(data[start] !== data[end]) return false;
+                end--;
+            }
+            return true;
+        }
+        let names = [];
+        for(var i=1; i<=10; i++){names.push(prompt(`Enter name of ${i}th student`));}
+        let pallName = []; 
+        names.forEach(name => {if(isPallindrome(name)) pallName.push(name);})
+        document.write(`<h1>From <em>[${names}]</em> <br/> <em>[${pallName}]</em> are pallindrome names</h1>`);
+    </script>
+</body>
+</html>
